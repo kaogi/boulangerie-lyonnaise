@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+
+const title = "Accueil";
+const description = "Boulangerie traditionnelle lyonnaise depuis 1952. Pain artisanal, viennoiseries fraîches et pâtisseries authentiques. Savoir-faire français, produits frais quotidiens.";
+const keywords = ["boulangerie lyonnaise", "pain artisanal", "viennoiseries traditionnelles", "boulangerie fran\u00e7aise", "pain frais Lyon", "savoir-faire artisanal", "baguette tradition", "p\u00e2tisserie fran\u00e7aise"];
+---
+
+<BaseLayout {title} {description} {keywords}>
+  <Hero
+    title="Boulangerie Lyonnaise - L\'art du pain traditionnel depuis 1952"
+    subtitle="Découvrez l\'authentique savoir-faire français avec nos pains artisanaux, viennoiseries et pâtisseries préparés chaque jour selon nos recettes traditionnelles lyonnaises."
+  />
+
+  <!-- Content sections -->
+  <div class="content-wrapper">
+    <section class="content-section">
+      <h2>Notre Tradition Artisanale</h2>
+      <p>Depuis plus de 70 ans, notre boulangerie perpétue l&#39;art du pain traditionnel français dans le cœur de Lyon. Chaque matin, nos boulangers pétrissent, façonnent et cuisent avec passion des pains aux céréales, baguettes tradition et spécialités lyonnaises. Notre engagement : vous offrir des produits authentiques, préparés avec des ingrédients soigneusement sélectionnés et un savoir-faire transmis de génération en génération.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Pain Artisanal &amp; Viennoiseries Fraîches</h2>
+      <p>Notre gamme complète de pains artisanaux satisfait tous les goûts : pain de campagne, pain complet, baguette parisienne et nos créations spéciales. Nos viennoiseries, croissants dorés, pains au chocolat et brioches, sont préparées chaque jour selon nos recettes traditionnelles. Venez découvrir également nos pâtisseries françaises et nos spécialités lyonnaises qui font la réputation de notre établissement familial.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Qualité &amp; Fraîcheur Garanties</h2>
+      <p>Nous sélectionnons rigoureusement nos matières premières : farines françaises, beurre AOP, œufs frais et levain naturel. Notre production quotidienne assure une fraîcheur optimale de tous nos produits. Du petit-déjeuner au goûter, en passant par vos réceptions, notre boulangerie lyonnaise vous accompagne avec des créations gourmandes qui respectent l&#39;authenticité des recettes françaises traditionnelles.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Votre Boulangerie de Quartier</h2>
+      <p>Au cœur de Lyon, notre équipe passionnée vous accueille dans une atmosphère chaleureuse et conviviale. Service personnalisé, conseils avisés et sourire sont nos marques de fabrique. Commandes spéciales, plateaux pour vos événements ou simplement votre pain quotidien, nous mettons notre expertise au service de votre satisfaction. Venez vivre l&#39;expérience d&#39;une vraie boulangerie française traditionnelle.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Horaires &amp; Informations Pratiques</h2>
+      <p>Retrouvez-nous du mardi au dimanche pour découvrir nos créations fraîches. Stationnement facile, commandes sur mesure et livraisons possibles pour vos événements spéciaux. N&#39;hésitez pas à nous contacter pour toute demande particulière ou pour réserver vos pains et pâtisseries préférés. Notre équipe reste à votre disposition pour vous conseiller et vous faire découvrir toute la richesse de notre savoir-faire artisanal lyonnais.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .content-section {
+    padding: 4rem 0;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary, #2563eb);
+  }
+
+  .content-section p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--color-text, #1f2937);
+    margin-bottom: 1rem;
+  }
+
+  .content-section:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+</style>
