@@ -1,0 +1,45 @@
+{
+  "site_name": "Boulangerie Lyonnaise",
+  "site_tagline": "L'art du pain traditionnel français depuis 1952",
+  "pages": [
+    {
+      "title": "Accueil",
+      "slug": "accueil",
+      "description": "Découvrez notre boulangerie traditionnelle lyonnaise, spécialisée dans le pain artisanal et les viennoiseries authentiques. Savoir-faire français et produits frais tous les jours.",
+      "content_type": "home"
+    },
+    {
+      "title": "Nos Produits",
+      "slug": "nos-produits",
+      "description": "Explorez notre gamme complète de pains artisanaux, viennoiseries traditionnelles et spécialités lyonnaises. Tous nos produits sont fabriqués quotidiennement avec des ingrédients de qualité.",
+      "content_type": "products"
+    },
+    {
+      "title": "Contact & Horaires",
+      "slug": "contact",
+      "description": "Retrouvez-nous dans le cœur de Lyon. Découvrez nos horaires d'ouverture, notre adresse et contactez-nous pour toutes vos demandes ou commandes spéciales.",
+      "content_type": "contact"
+    }
+  ],
+  "color_scheme": {
+    "primary": "#8B4513",
+    "secondary": "#F4E4BC",
+    "accent": "#D4AF37",
+    "background": "#FFF8DC",
+    "text": "#2F1B14"
+  },
+  "navigation": [
+    {
+      "label": "Accueil",
+      "slug": "accueil"
+    },
+    {
+      "label": "Nos Produits",
+      "slug": "nos-produits"
+    },
+    {
+      "label": "Contact",
+      "slug": "contact"
+    }
+  ]
+}

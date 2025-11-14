@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+
+const title = "Nos Produits";
+const description = "Découvrez nos pains artisanaux, viennoiseries traditionnelles et spécialités lyonnaises. Boulangerie artisanale depuis 1952 à Lyon. Qualité et tradition française.";
+const keywords = ["boulangerie lyonnaise", "pain artisanal", "viennoiseries traditionnelles", "sp\u00e9cialit\u00e9s lyon", "p\u00e2tisserie fran\u00e7aise", "baguette tradition", "artisan boulanger"];
+---
+
+<BaseLayout {title} {description} {keywords}>
+  <Hero
+    title="L\'Excellence Artisanale de Lyon à Votre Table"
+    subtitle="Découvrez notre gamme complète de pains traditionnels, viennoiseries dorées et spécialités lyonnaises, façonnés avec passion depuis 1952"
+  />
+
+  <!-- Content sections -->
+  <div class="content-wrapper">
+    <section class="content-section">
+      <h2>Nos Pains Artisanaux</h2>
+      <p>Chaque matin, nos maîtres boulangers pétrissent avec soin nos pains traditionnels selon des recettes transmises de génération en génération. Du pain de campagne au levain à notre célèbre baguette tradition, en passant par nos pains aux céréales et nos créations spéciales, nous utilisons exclusivement des farines de qualité supérieure et respectons les temps de fermentation naturelle pour vous offrir des pains au goût authentique et à la croûte dorée.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Viennoiseries Traditionnelles</h2>
+      <p>Nos viennoiseries sont le fruit d&#39;un savoir-faire artisanal préservé depuis plus de 70 ans. Croissants au beurre fondants, pains au chocolat généreux, chaussons aux pommes délicats... Chaque pièce est façonnée à la main et cuite au four traditionnel pour vous garantir une texture feuilletée parfaite et un goût incomparable. Nos brioches et nos pains aux raisins complètent cette gamme gourmande pour égayer vos petits-déjeuners.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Spécialités Lyonnaises</h2>
+      <p>Fidèles à nos racines lyonnaises, nous perpétuons la tradition avec nos spécialités régionales authentiques. Goûtez à notre fameux pâté en croûte lyonnais, nos quenelles de brochet artisanales, et nos pralines roses emblématiques de Lyon. Nos bugnes traditionnelles durant la période du Carnaval et nos coussins de Lyon parfumés au curaçao sont autant de trésors gastronomiques qui font la fierté de notre belle région.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Pâtisseries et Douceurs</h2>
+      <p>Notre équipe de pâtissiers talentueux crée quotidiennement une sélection raffinée de gâteaux, tartes et entremets. Des classiques revisités comme la tarte aux fruits de saison aux créations originales, chaque pâtisserie est réalisée avec des ingrédients nobles : beurre AOP, chocolat Valrhona, fruits frais de nos producteurs locaux. Nos éclairs, religieuses et mille-feuilles témoignent de notre expertise en pâtisserie française traditionnelle.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Engagement Qualité</h2>
+      <p>Depuis 1952, notre engagement reste inchangé : vous proposer des produits d&#39;exception fabriqués dans le respect de la tradition boulangère française. Nous sélectionnons rigoureusement nos fournisseurs locaux, privilégions les circuits courts et bannissons les additifs artificiels. Tous nos produits sont pétris, façonnés et cuits sur place chaque jour pour vous garantir une fraîcheur optimale et préserver tous les arômes de nos créations artisanales.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .content-section {
+    padding: 4rem 0;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary, #2563eb);
+  }
+
+  .content-section p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--color-text, #1f2937);
+    margin-bottom: 1rem;
+  }
+
+  .content-section:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+</style>

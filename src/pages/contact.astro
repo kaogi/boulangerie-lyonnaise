@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+
+const title = "Contact & Horaires";
+const description = "Contactez la Boulangerie Lyonnaise au cœur de Lyon. Découvrez nos horaires, adresse et passez vos commandes spéciales. Tradition depuis 1952.";
+const keywords = ["boulangerie Lyon", "contact boulangerie", "horaires boulangerie Lyon", "commandes sp\u00e9ciales Lyon", "boulangerie traditionnelle", "pain fran\u00e7ais Lyon", "boulangerie artisanale"];
+---
+
+<BaseLayout {title} {description} {keywords}>
+  <Hero
+    title="Retrouvez-nous au cœur de Lyon"
+    subtitle="Depuis 1952, nous vous accueillons avec passion dans notre boulangerie traditionnelle lyonnaise"
+  />
+
+  <!-- Content sections -->
+  <div class="content-wrapper">
+    <section class="content-section">
+      <h2>Nos coordonnées</h2>
+      <p>Située dans le quartier historique de Lyon, notre boulangerie vous ouvre ses portes du mardi au dimanche. Vous trouverez facilement notre établissement grâce à l&#39;arôme authentique de nos pains fraîchement sortis du four et notre vitrine colorée qui met en valeur nos spécialités lyonnaises. Pour vos commandes spéciales, anniversaires ou événements particuliers, n&#39;hésitez pas à nous contacter directement par téléphone ou à passer nous voir en boutique.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Horaires d&#39;ouverture</h2>
+      <p>Nous sommes heureux de vous accueillir selon les horaires suivants : Du mardi au vendredi : 6h30 - 19h30 (service continu). Le samedi : 6h30 - 20h00 pour répondre à vos besoins du weekend. Le dimanche : 7h00 - 13h00 pour vos petits-déjeuners dominicaux. Fermé le lundi pour permettre à notre équipe de se reposer. Pendant les périodes de fêtes, nos horaires peuvent être adaptés - consultez nos actualités ou contactez-nous.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Commandes spéciales</h2>
+      <p>Vous organisez un événement particulier ? Notre équipe de boulangers-pâtissiers se fait un plaisir de réaliser vos commandes sur mesure. Pièces montées, gâteaux d&#39;anniversaire personnalisés, plateaux de viennoiseries pour vos réunions d&#39;entreprise, ou encore nos spécialités lyonnaises en grande quantité. Nous recommandons de passer commande au moins 48h à l&#39;avance pour garantir la disponibilité et la fraîcheur de vos produits.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Accès et stationnement</h2>
+      <p>Notre boulangerie est facilement accessible en transport en commun avec l&#39;arrêt de métro le plus proche à seulement 2 minutes à pied. Pour nos clients venant en voiture, plusieurs places de stationnement payant sont disponibles dans la rue, ainsi qu&#39;un parking public à proximité. L&#39;établissement est également accessible aux personnes à mobilité réduite. Si vous venez pour la première fois, repérez notre enseigne traditionnelle et laissez-vous guider par les délicieux arômes qui s&#39;échappent de nos fours.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Pourquoi nous choisir ?</h2>
+      <p>Avec plus de 70 ans d&#39;expérience, notre boulangerie familiale perpétue les traditions boulangères lyonnaises tout en s&#39;adaptant aux goûts contemporains. Notre équipe passionnée sélectionne rigoureusement ses matières premières et travaille selon des méthodes artisanales authentiques. Nous proposons également des options bio et sans gluten pour répondre aux besoins de tous nos clients. Venez découvrir pourquoi les Lyonnais nous font confiance depuis trois générations.</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .content-section {
+    padding: 4rem 0;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary, #2563eb);
+  }
+
+  .content-section p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--color-text, #1f2937);
+    margin-bottom: 1rem;
+  }
+
+  .content-section:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+</style>
